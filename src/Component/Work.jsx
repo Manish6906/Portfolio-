@@ -33,13 +33,13 @@ const projects = [
     visitLink: 'https://password-generator-zeta-gules-23.vercel.app/',
     githubLink: 'https://github.com/Manish6906/PasswordGenerator'
   },
-  {
-    image: code,
-    title: 'Web Development',
-    name: 'Bakery Website',
-    visitLink: 'https://bakery-eight-alpha.vercel.app/',
-    githubLink: 'https://github.com/Manish6906/Bakery-'
-  }
+    // {
+    //   image: code,
+    //   title: 'Web Development',
+    //   name: 'Bakery Website',
+    //   visitLink: 'https://bakery-eight-alpha.vercel.app/',
+    //   githubLink: 'https://github.com/Manish6906/Bakery-'
+    // }
 ];
 
 function Work() {
