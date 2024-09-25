@@ -34,7 +34,7 @@ function Sidebar() {
                 <div className=' mt-3 flex justify-evenly items-center w-[80%] text-[1.5rem] sm:w-[90%]'>
                   <Link to="https://www.facebook.com/profile.php?id=100042788022907" target='_blank' className='bg-sky-300 rounded-lg p-[0.5rem] cursor-pointer text-blue-800'><FaFacebookSquare /></Link>
                   <Link to="https://www.linkedin.com/in/manish-0983b6204?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target='_blank' className='bg-sky-300 rounded-lg p-[0.5rem] cursor-pointer  text-blue-800'><FaLinkedin /></Link>
-                  <Link to="https://github.com/" target='_blank' className='bg-sky-300 rounded-lg p-[0.5rem] cursor-pointer  '><FaGithub /></Link>
+                  <Link to="https://github.com/Manish6906" target='_blank' className='bg-sky-300 rounded-lg p-[0.5rem] cursor-pointer  '><FaGithub /></Link>
                   <Link to="https://www.instagram.com/?hl=en" target='_blank' className='bg-sky-300 rounded-lg p-[0.5rem] cursor-pointer  text-pink-500'><FaInstagramSquare /></Link>
                 </div>
 

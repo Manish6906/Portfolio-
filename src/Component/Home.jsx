@@ -1,13 +1,15 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css"
+
 
 // img import
 import Line from "./../assets/Line5.png";
 
+
 // icon import
 import { FaCode } from "react-icons/fa6";
-// import { CiInstagram } from "react-icons/ci";
+
 import { SiCodementor } from "react-icons/si";
 const Home = () => {
 
@@ -24,7 +26,6 @@ const Home = () => {
               About Me
             </h1>
             <img src={Line} className="text-[1px]" />
-            {/* <img src={Line}  className='text-[1px]'/> */}
             <p className="mt-4 text-center sm:text-left border-b-2 border-solid border-gray-500 rounded-lg p-2" data-aos="fade-left">
               Hello there! I'm thrilled to welcome you to my portfolio. I am a
               passionate and versatile full-stack developer with a keen interest
@@ -66,12 +67,6 @@ const Home = () => {
               throughout my career. 
               </p>
             </div>
-
-
-
-
-
-
 
 
           </div>

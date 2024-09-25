@@ -1,4 +1,4 @@
-import React from 'react'
+
 
 // icon import
 import { IoMdCall } from "react-icons/io";
@@ -56,13 +56,6 @@ function Contact() {
         partnerships </b>and more so <b>mentorship</b>. </p>
 
 
-
-        
-        
-        
-        
-        
-        
         
         </div>
         <form action="https://api.web3forms.com/submit" method="POST"  data-aos="fade-in">
@@ -70,14 +63,13 @@ function Contact() {
 
         <input type="hidden" name="access_key" value="2e6b420c-849f-464e-aa8c-246b07844aaa" />
 
-        
-        <label for="Name" className='font-semibold'>Name:</label>
+
+        <label htmlFor="Name" className='font-semibold'>Name:</label>
           <input type='text' name="Name" required className=' outline-0 border-b-2 mb-3 border-black bg-gray-400 w-full rounded-md p-2'/>
-          <label for="Email" className='font-semibold '>Email:</label>
+          <label htmlFor="Email" className='font-semibold '>Email:</label>
           <input type='email' name="Email" required className=' outline-0 border-b-2 mb-3 border-black bg-gray-400 w-full rounded-md p-2' />
-          <label for="Message" className='font-semibold '>Message:</label>
+          <label htmlFor="Message" className='font-semibold '>Message:</label>
           <input type='text' name="Message" required className=' outline-0 border-b-2 border-black bg-gray-400 w-full rounded-md p-2' />
-       
           <button className='border-2 border-yellow-300 rounded-full p-2 mt-5 font-bold'>Submit</button>
 
          

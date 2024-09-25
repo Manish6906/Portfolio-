@@ -1,7 +1,7 @@
-import React from 'react'
+
 import { FaRegUserCircle } from "react-icons/fa";
-import { Link } from 'react-router-dom';
-// import Logo from './../assets/Images/Screenshot 2024-07-19 151646.png';
+
+
 
 const Navbar = () => {
   return (

@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { Link, NavLink } from "react-router-dom";
+import { useState } from "react";
+import {  NavLink } from "react-router-dom";
 // icon import
 import { FaHome } from "react-icons/fa";
 import { MdMenuBook, MdOutlineWorkOutline } from "react-icons/md";

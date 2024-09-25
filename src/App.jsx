@@ -12,6 +12,7 @@ import Contact from './Component/Contact'
 
 
 
+
 function App() {
   return (
     <>
@@ -34,6 +35,7 @@ function App() {
       </div>
       <Bottom />
     </BrowserRouter>
+
     </>
   )
 }
