@@ -7,7 +7,7 @@ import "aos/dist/aos.css"
 // import picture
 import Mainpic from './../assets/Images/A1_33_261dffb8-1073-462d-b670-13e2d0b2616a.webp';
 
-import pdf from "../assets/Manish Cv.pdf"
+import pdf from "../assets/Manish.pdf"
 
 // icons
 import { FaFacebookSquare } from "react-icons/fa";
@@ -18,7 +18,7 @@ import { MdOutlineMail } from "react-icons/md";
 import { CiLocationOn } from "react-icons/ci";
 import { GoDownload } from "react-icons/go";
 import { FaGithub } from "react-icons/fa";
-import App from './../App';
+
 
 
 function Sidebar() {
@@ -64,7 +64,7 @@ function Sidebar() {
                           </div>
                      </div>
                      <div className='mt-5 p-2 grid place-items-center bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90% ... rounded-lg active:opacity-70 shadow-2xl shadow-black'>
-                     <button  download="DownloadResume" className='flex items-center gap-1 '><GoDownload  /><a href={pdf} download='Manish Resume'>Download Resume </a></button>
+                     <button  className='flex items-center gap-1 '><GoDownload  /><a href={pdf} download='ManishCV'>Download Resume </a></button>
                     
                      </div>
                     
