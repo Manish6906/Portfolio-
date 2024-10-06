@@ -1,4 +1,4 @@
-import React from 'react'
+
 import {  Link } from "react-router-dom";
 import Aos from 'aos';
 import "aos/dist/aos.css"
@@ -7,7 +7,7 @@ import "aos/dist/aos.css"
 // import picture
 import Mainpic from './../assets/Images/A1_33_261dffb8-1073-462d-b670-13e2d0b2616a.webp';
 
-import pdf from "../assets/Manish.pdf"
+import pdf from "../assets/Manish_CV.pdf"
 
 // icons
 import { FaFacebookSquare } from "react-icons/fa";
@@ -24,7 +24,7 @@ import { FaGithub } from "react-icons/fa";
 function Sidebar() {
   return (
     <>
-      <div className='p-3 mt-14 '>
+      <div className='p-3 mt-14'>
         <div className='bg-gray-200 mt-2 rounded-md p-4 flex flex-col items-center' data-Aos="zoom-in">
               <div className=' h-[7rem] w-[7rem]'>
                    <img className='rounded-xl relative bottom-7 border-2 border-dashed border-yellow-400' src={Mainpic} />
@@ -37,8 +37,6 @@ function Sidebar() {
                   <Link to="https://github.com/Manish6906" target='_blank' className='bg-sky-300 rounded-lg p-[0.5rem] cursor-pointer  '><FaGithub /></Link>
                   <Link to="https://www.instagram.com/?hl=en" target='_blank' className='bg-sky-300 rounded-lg p-[0.5rem] cursor-pointer  text-pink-500'><FaInstagramSquare /></Link>
                 </div>
-
-
               <div className='bg-gray-300 rounded-xl mt-10 p-3 shadow-sm shadow-black '>
                      <div className='flex items-center p-3 gap-3 rounded-md border-b-2 border-solid border-gray-500'>
                           <FaMobileScreenButton />
@@ -60,7 +58,7 @@ function Sidebar() {
                      <CiLocationOn />
                           <div className=' rounded-xl '>
                           <p className='text-[13px] text-gray-500 font-medium'>Location</p>
-                          <p className='text-[12px] font-semibold'>Himachal Pradesh</p>
+                          <p className='text-[12px] font-semibold'>Chandigarh</p>
                           </div>
                      </div>
                      <div className='mt-5 p-2 grid place-items-center bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90% ... rounded-lg active:opacity-70 shadow-2xl shadow-black'>
