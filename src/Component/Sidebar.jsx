@@ -8,7 +8,7 @@ import "aos/dist/aos.css"
 import Mainpic from './../assets/Images/A1_33_261dffb8-1073-462d-b670-13e2d0b2616a.webp';
 
 import pdf from "../assets/Manish_CV.pdf"
-
+// import pdf from "../assets/Manish_CV.pdf"S
 // icons
 import { FaFacebookSquare } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa6";
