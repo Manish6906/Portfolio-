@@ -7,8 +7,8 @@ import "aos/dist/aos.css"
 // import picture
 import Mainpic from './../assets/Images/A1_33_261dffb8-1073-462d-b670-13e2d0b2616a.webp';
 
-import pdf from "../assets/Manish_CV.pdf"
-// import pdf from "../assets/Manish_CV.pdf"S
+import pdf from "../assets/Images/Manish_CV.pdf"
+
 // icons
 import { FaFacebookSquare } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa6";
@@ -21,13 +21,16 @@ import { FaGithub } from "react-icons/fa";
 
 
 
+
 function Sidebar() {
   return (
     <>
       <div className='p-3 mt-14'>
         <div className='bg-gray-200 mt-2 rounded-md p-4 flex flex-col items-center' data-Aos="zoom-in">
-              <div className=' h-[7rem] w-[7rem]'>
+              <div className=' h-[7rem] w-[7rem] overflow-visible'>
                    <img className='rounded-xl relative bottom-7 border-2 border-dashed border-yellow-400' src={Mainpic} />
+                   {/* <img className='rounded-xl relative bottom-7 border-2 border-dashed border-yellow-400' src={profile} /> */}
+
                </div>
               <h1 className='text-[2rem] font-medium'>Manish</h1>
              <p className='text-gray-800 font-light'> Web Developer</p>
