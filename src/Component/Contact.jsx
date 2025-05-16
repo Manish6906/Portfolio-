@@ -13,7 +13,7 @@ import Line from "./../assets/Line5.png";
 function Contact() {
   return (
     <>
-    <div className="p-3 mt-10 sm:mt-0">
+    <div className="p-3 josefin-sansa mt-10 sm:mt-0">
         <div className='bg-gray-400 rounded-lg p-5 lg:p-10 lg:flex lg:gap-4'>
         <div className='' data-aos="fade-in">
         <div className=" ">
@@ -34,7 +34,7 @@ function Contact() {
                     <div className='text-gray-800 mt-2  '>
 
                           <address>+91 7807895370</address> 
-                          <address>+91 7807895370</address>
+                          {/* <address>+91 7807895370</address> */}
                     </div>
             </div>
 

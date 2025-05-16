@@ -19,14 +19,14 @@ const Home = () => {
   },[])
   return (
     <>
-      <div className="p-3 mt-10 sm:mt-0">
+      <div className="p-3 josefin-sansa mt-10 sm:mt-0">
         <div className=" bg-gray-400 rounded-lg p-4 sm:p-10">
           <div className="">
             <h1 className="font-semibold text-[1.5rem] text-center sm:text-left">
               About Me
             </h1>
             <img src={Line} className="text-[1px]" />
-            <p className="mt-4 text-center sm:text-left border-b-2 border-solid border-gray-500 rounded-lg p-2" data-aos="fade-left">
+            <p className="mt-4 text-center sm:text-left border-b-2 border-solid border-gray-500 rounded-lg p-2" data-aos="fade-up">
               Hello there! I'm thrilled to welcome you to my portfolio. I am a
               passionate and versatile full-stack developer with a keen interest
               in exploring the latest cutting-edge technologies. My journey in

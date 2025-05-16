@@ -1,71 +1,82 @@
-import React from 'react'
-import { useState } from "react";
-import { Link } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 
-
-// icon import
-import { FaHome } from "react-icons/fa";
-import { MdMenuBook } from "react-icons/md";
-import { MdOutlineWorkOutline } from "react-icons/md";
-import { BiSolidContact } from "react-icons/bi";
+// Icons
+import { FaHome } from 'react-icons/fa';
+import { MdMenuBook } from 'react-icons/md';
+import { MdOutlineWorkOutline } from 'react-icons/md';
+import { BiSolidContact } from 'react-icons/bi';
 
 function Bottom() {
-   const [clicked, setClicked] = useState(null);
+  const location = useLocation();
+  const [clicked, setClicked] = useState(null);
 
-  // Toggle the clicked state
-  const handleClick = (icon) => {
-    setClicked(icon);
-  };
+  // Set active icon based on current route
+  useEffect(() => {
+    if (location.pathname === '/') {
+      setClicked('home');
+    } else if (location.pathname === '/resume') {
+      setClicked('resume');
+    } else if (location.pathname === '/work') {
+      setClicked('work');
+    } else if (location.pathname === '/contact') {
+      setClicked('contact');
+    }
+  }, [location.pathname]);
 
-  // Define styles based on the clicked state
+  // Styles for each icon
   const getLinkStyle = (icon) => ({
-    backgroundColor: clicked === icon ? "red" : "gray",
+    backgroundColor: clicked === icon ? 'red' : 'gray',
+    transition: 'background-color 0.3s ease', // smooth color change
   });
+
   return (
-    <> 
-    <div className='p-2 sticky bottom-0'>   
-     <div className='mt-10 p-4  rounded-2xl flex justify-between sm:hidden gap-5'>
-       
-           <Link to="/" className='bg-gray-600 text-white rounded-lg grid place-items-center p-2' onClick={() => handleClick("home")}
-              style={getLinkStyle("home")} ><FaHome /> 
-               <p className='text-[12px]'>Home</p>
-               </Link>
-               
-      
+    <div className="p-2 josefin-sans sticky bottom-0 z-50 bg-white">
+      <div className="p-4 rounded-2xl flex justify-between sm:hidden gap-5">
 
-        {/* second icon */}
+        <Link
+          to="/"
+          onClick={() => setClicked('home')}
+          style={getLinkStyle('home')}
+          className="text-white rounded-lg grid place-items-center p-2 w-full"
+        >
+          <FaHome />
+          <p className="text-[12px]">Home</p>
+        </Link>
 
-        
-           <Link to="/resume" className='bg-gray-600 text-white rounded-lg grid place-items-center p-2' onClick={() => handleClick("resume")}
-              style={getLinkStyle("resume")} ><MdMenuBook />
-              <p className='text-[12px]'>Resume</p>
-               </Link>
-           
-       
+        <Link
+          to="/resume"
+          onClick={() => setClicked('resume')}
+          style={getLinkStyle('resume')}
+          className="text-white rounded-lg grid place-items-center p-2 w-full"
+        >
+          <MdMenuBook />
+          <p className="text-[12px]">Resume</p>
+        </Link>
 
-        {/* 3rd icon */}
+        <Link
+          to="/work"
+          onClick={() => setClicked('work')}
+          style={getLinkStyle('work')}
+          className="text-white rounded-lg grid place-items-center p-2 w-full"
+        >
+          <MdOutlineWorkOutline />
+          <p className="text-[12px]">Work</p>
+        </Link>
 
-       
-           <Link to="work" className='bg-gray-600 text-white rounded-lg grid place-items-center p-2' onClick={() => handleClick("work")}
-              style={getLinkStyle("work")}> <MdOutlineWorkOutline /> 
-               <p className='text-[12px]'>work</p>
-              </Link>
-           
-       
+        <Link
+          to="/contact"
+          onClick={() => setClicked('contact')}
+          style={getLinkStyle('contact')}
+          className="text-white rounded-lg grid place-items-center p-2 w-full"
+        >
+          <BiSolidContact />
+          <p className="text-[12px]">Contact</p>
+        </Link>
 
-        {/* 4th icon */}
-        
-           <Link to="/contact" className='bg-gray-600 text-white rounded-lg grid place-items-center p-2' onClick={() => handleClick("contact")}
-              style={getLinkStyle("contact")} ><BiSolidContact /> 
-               <p className='text-[12px]'>Contact</p>
-              </Link>
-           
-        
-     </div> 
-
-   </div>  
-    </>
-  )
+      </div>
+    </div>
+  );
 }
 
-export default Bottom
+export default Bottom;

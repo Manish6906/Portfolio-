@@ -1,78 +1,98 @@
-
-
 // img imports
 import Line from "./../assets/Line5.png";
 import { Link } from 'react-router-dom';
-import firstPicture from './../assets/firstProject.png';
-import secondPicture from './../assets/secondpicture.png';
-import code from './../assets/code.png';
-import cake from './../assets/cake.png';
 
 // icon imports
 import { FaGithub } from "react-icons/fa6";
-
+import digiAi from '../assets/Images/Screenshot 2025-05-16 102403.png';
+import fusion from '../assets/Images/Screenshot 2025-05-16 102935.png';
+import astro from '../assets/Images/Screenshot 2025-05-16 103152.png';
+import tanish from '../assets/Images/Screenshot 2025-05-16 103241.png';
 
 // Array of project data
 const projects = [
   {
-    image: firstPicture,
+    image: fusion,
     title: 'Web Development',
-    name: 'hotel-booking',
-    visitLink: 'https://hotel-booking-nine-black.vercel.app/',
-    githubLink: 'https://github.com/Manish6906/hotel-booking'
+    name: 'DigiSky Fusion ',
+    visitLink: 'https://digiskyfusion.com/',
+    githubLink: 'https://github.com/Manish6906/DigiskyfusionWebsite'
+  },
+    {
+    image: digiAi,
+    title: 'Web Development',
+    name: 'DigiSky.Ai',
+    visitLink: 'https://digisky.ai/',
+    githubLink: 'https://github.com/Digiskyfusion/Project-Frontend'
   },
   {
-    image: secondPicture,
+    image: astro,
     title: 'Web Development',
-    name: 'wooden-galaxy',
-    visitLink: 'https://wooden-galaxy-chi.vercel.app/',
-    githubLink: 'https://github.com/Manish6906/wooden-galaxy'
+    name: 'Astrologer',
+    visitLink: 'https://astroaghoribaba.com/',
+    githubLink: 'https://github.com/Manish6906/aasstrologer'
   },
-  // {
-  //   image: code,
-  //   title: 'Web Development',
-  //   name: 'Password Generator',
-  //   visitLink: 'https://password-generator-zeta-gules-23.vercel.app/',
-  //   githubLink: 'https://github.com/Manish6906/PasswordGenerator'
-    
-    {
-    image: secondPicture,
+  {
+    image: tanish,
     title: 'Web Development',
-    name: 'bakery Website',
-    visitLink: 'https://bakery-eight-alpha.vercel.app/',
-    githubLink: 'https://github.com/Manish6906/Bakery-'
-  },
-    // {
-    //   image: code,
-    //   title: 'Web Development',
-    //   name: 'Bakery Website',
-    //   visitLink: 'https://bakery-eight-alpha.vercel.app/',
-    //   githubLink: 'https://github.com/Manish6906/Bakery-'
-    // }
+    name: 'Tanish Enterpris',
+    visitLink: 'https://tanishenterpriss.com/',
+    githubLink: 'https://github.com/Manish6906/Construction'
+  }
 ];
 
 function Work() {
   return (
-    <div className='p-3 mt-10 sm:mt-0'>
+    <div className='px-4 josefin-sansa sm:px-6 lg:px-3 lg:py-3'>
       <div className='bg-gray-400 rounded-lg p-5 sm:p-10'>
+        {/* Section Title */}
         <div>
-          <h1 className='font-semibold text-[1.5rem] text-center sm:text-left'>Portfolio</h1>
-          <img className="" src={Line} alt="line divider" />
-        </div>
-        <div className='mt-4 font-semibold'>
-          <Link to="#" className='text-gray-800'>All Project</Link>
+          <h1 className='font-bold text-2xl sm:text-3xl text-center sm:text-left text-gray-900'>
+            Portfolio
+          </h1>
+          <img className="mt-2 mx-auto sm:mx-0 w-32" src={Line} alt="line divider" />
         </div>
 
-        <div className='mt-4 lg:flex  lg:gap-5  ' data-aos="fade-in">
+        {/* All Projects link */}
+        <div className='mt-4 font-semibold'>
+          <Link to="#" className='text-gray-800 underline'>All Projects</Link>
+        </div>
+
+        {/* Project Grid */}
+        <div className='mt-8 grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4'>
           {projects.map((project, index) => (
-            <div key={index} className='bg-gray-600 p-2 shadow-md shadow-black rounded-md mt-5 lg:mt-0'>
-              <img className="" src={project.image} alt={project.name} />
-              <p className='mt-3 font-medium'>{project.title}</p>
-              <div className='flex items-center justify-between p-1'>
-                <p className='font-normal text-sm'>{project.name}</p>
-                <div className='flex items-center gap-5'>
-                  <Link to={project.visitLink} target='_blank' className='text-white'>Visit</Link>
-                  <Link to={project.githubLink} target='_blank' className='text-white text-[1.2rem]'><FaGithub /></Link>
+            <div
+              key={index}
+              className='bg-gray-600 rounded-lg shadow-md hover:shadow-xl p-1 transform hover:scale-105 transition duration-300 ease-in-out overflow-hidden'
+              data-aos="fade-in"
+            >
+              <img
+                src={project.image}
+                alt={project.name}
+                className='w-full h-48 object-fill rounded-md'
+              />
+              <div className='p-4'>
+                <p className='text-white font-medium text-lg'>{project.title}</p>
+                <div className='flex items-center justify-between mt-2'>
+                  <p className='text-gray-200 text-sm'>{project.name}</p>
+                  <div className='flex items-center gap-4'>
+                    <a
+                      href={project.visitLink}
+                      target='_blank'
+                      rel="noopener noreferrer"
+                      className='text-white hover:underline text-sm'
+                    >
+                      Visit
+                    </a>
+                    <a
+                      href={project.githubLink}
+                      target='_blank'
+                      rel="noopener noreferrer"
+                      className='text-white text-lg'
+                    >
+                      <FaGithub />
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
