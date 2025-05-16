@@ -11,7 +11,7 @@ const Navbar = () => {
         <div className='flex justify-between items-center p-4 bg-sky-300 rounded-lg'>
         
         <Link to="/">
-            <i className='font-medium  josefin-sansa cursor-pointer text-[1.4rem] sm:text-[2rem]'>PORTFOLIO</i>
+            <i className='font-medium  josefin-sans cursor-pointer text-[1.4rem] sm:text-[2rem]'>PORTFOLIO</i>
             </Link>
             <p className='text-[2rem] cursor-pointer ac'><FaRegUserCircle /></p>
 
