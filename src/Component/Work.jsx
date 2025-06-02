@@ -8,6 +8,7 @@ import digiAi from '../assets/Images/Screenshot 2025-05-16 102403.png';
 import fusion from '../assets/Images/Screenshot 2025-05-16 102935.png';
 import astro from '../assets/Images/Screenshot 2025-05-16 103152.png';
 import tanish from '../assets/Images/Screenshot 2025-05-16 103241.png';
+import shaadi from '../assets/Images/Screenshot 2025-06-02 140050.png';
 
 // Array of project data
 const projects = [
@@ -38,6 +39,13 @@ const projects = [
     name: 'Tanish Enterpris',
     visitLink: 'https://tanishenterpriss.com/',
     githubLink: 'https://github.com/Manish6906/Construction'
+  },
+   {
+    image: shaadi,
+    title: 'Web Development',
+    name: 'Shaadi Sanskar',
+    visitLink: 'https://www.shaadisanskar.com/',
+    githubLink: 'https://github.com/Digiskyfusion/Shaadi'
   }
 ];
 
