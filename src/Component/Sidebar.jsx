@@ -4,7 +4,7 @@ import "aos/dist/aos.css";
 
 // images and files
 import Mainpic from './../assets/Images/A1_33_261dffb8-1073-462d-b670-13e2d0b2616a.webp';
-import pdf from "./../assets/Images/Manish_Resume.pdf";
+import pdf from "./../assets/Images/Manish_Cv.pdf";
 
 // icons
 import { FaFacebookSquare, FaInstagramSquare, FaGithub } from "react-icons/fa";
@@ -26,7 +26,7 @@ function Sidebar() {
 
           <div className='mt-3 flex justify-evenly items-center w-[80%] text-[1.5rem] sm:w-[90%]'>
             <Link to="https://www.facebook.com/profile.php?id=100042788022907" target='_blank' className='bg-sky-300 rounded-lg p-[0.5rem] text-blue-800 hover:scale-110 transition'><FaFacebookSquare /></Link>
-            <Link to="https://www.linkedin.com/in/manish-0983b6204" target='_blank' className='bg-sky-300 rounded-lg p-[0.5rem] text-blue-800 hover:scale-110 transition'><FaLinkedin /></Link>
+            <Link to="https://www.linkedin.com/in/manish-sharma-0983b6204?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target='_blank' className='bg-sky-300 rounded-lg p-[0.5rem] text-blue-800 hover:scale-110 transition'><FaLinkedin /></Link>
             <Link to="https://github.com/Manish6906" target='_blank' className='bg-sky-300 rounded-lg p-[0.5rem] hover:scale-110 transition'><FaGithub /></Link>
             <Link to="https://www.instagram.com/?hl=en" target='_blank' className='bg-sky-300 rounded-lg p-[0.5rem] text-pink-500 hover:scale-110 transition'><FaInstagramSquare /></Link>
           </div>

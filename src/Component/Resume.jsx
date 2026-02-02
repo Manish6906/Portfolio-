@@ -90,7 +90,7 @@ function Resume() {
                     </div>
                     <div className="sm:flex sm:flex-col sm:items-center border-b-2 border-gray-700 rounded-md p-2">
                       <h1 className="font-semibold text-gray-500">To</h1>
-                      <p className="text-[13px]">Present</p>
+                      <p className="text-[13px]">30-June-2025</p>
                     </div>
                   </div>
                 </div>
@@ -117,8 +117,8 @@ function Resume() {
                     <h1 className="underline">MongoDB</h1>
                     <h1 className="underline">GIT</h1>
                     <h1 className="underline">GITHUB</h1>
-                    <h1 className="underline">WordPress</h1>
-                    <h1 className="underline">Figma</h1>
+                    {/* <h1 className="underline">WordPress</h1>
+                    <h1 className="underline">Figma</h1> */}
                   </div>
                 </div>
               </div>
